@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourPlus - Transporte e Turismo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">TourPlus</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#location">Localização</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#reviews">Avaliações</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bem-vindo à TourPlus</h1>
+            <p>Sua jornada começa aqui - Transporte seguro e experiências inesquecíveis</p>
+            <button class="cta-button">Comece sua Viagem</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Quem Somos Nós?</h3>
+                    <p>Somos uma empresa especializada em transporte de passageiros e turismo, com anos de experiência
+                        no mercado. Nossa equipe é formada por profissionais qualificados e apaixonados por proporcionar
+                        as melhores experiências de viagem para nossos clientes.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>O que Fazemos?</h3>
+                    <p>Oferecemos serviços completos de transporte urbano e turístico, incluindo tours personalizados,
+                        transfers para aeroportos, viagens corporativas e passeios pela cidade. Nosso objetivo é
+                        conectar pessoas a lugares incríveis com segurança e conforto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title">Nossa Localização</h2>
+            <div class="location-content">
+                <div class="map-container">
+                    <div id="map"></div>
+                </div>
+                <div class="location-info">
+                    <h3>Encontre-nos Facilmente</h3>
+                    <p>Estamos estrategicamente localizados no centro da cidade para melhor atendê-lo. Nossa base de
+                        operações conta com uma frota moderna e equipe sempre pronta para suas necessidades de
+                        transporte.</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rua das Viagens, 123 - Centro</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 9999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@tourplus.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Section -->
+    <section class="ai-section">
+        <div class="container">
+            <h2 class="section-title">Tecnologia e Inovação</h2>
+            <div class="ai-content">
+                <div class="ai-image">
+                    <img src="assets/ai-image.jpg" alt="Inteligência Artificial no Transporte" />
+                </div>
+                <div class="ai-info">
+                    <h3>IA a Serviço do Transporte</h3>
+                    <p>Utilizamos tecnologia de ponta e inteligência artificial para otimizar rotas, prever demandas e
+                        garantir a melhor experiência para nossos passageiros. Nossa plataforma inteligente analisa
+                        dados em tempo real para oferecer o serviço mais eficiente possível.</p>
+                    <ul class="ai-features">
+                        <li><i class="fas fa-check"></i> Otimização de rotas em tempo real</li>
+                        <li><i class="fas fa-check"></i> Previsão de demanda inteligente</li>
+                        <li><i class="fas fa-check"></i> Monitoramento de segurança avançado</li>
+                        <li><i class="fas fa-check"></i> Experiência personalizada para cada cliente</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <button class="service-card" data-service="tourism">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Deseja Conhecer Novas Cidades</h3>
+                    <p>Explore destinos incríveis com nossos tours guiados</p>
+                </button>
+                <button class="service-card" data-service="local">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Busca Saber Mais Sobre Sua Cidade</h3>
+                    <p>Descubra os segredos da sua própria cidade</p>
+                </button>
+                <button class="service-card" data-service="transport">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Deseja uma Corrida Mais Calma</h3>
+                    <p>Transporte executivo sem a parte turística</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Avaliações</h2>
+            <div class="reviews-tabs">
+                <button class="tab-button active" data-tab="client-reviews">
+                    <i class="fas fa-star"></i> Avaliações de Clientes
+                </button>
+                <button class="tab-button" data-tab="employee-reviews">
+                    <i class="fas fa-user-tie"></i> Avaliações de Funcionários
+                </button>
+            </div>
+
+            <div class="tab-content active" id="client-reviews">
+                <div class="review-form">
+                    <h3>Avalie nosso serviço</h3>
+                    <form id="clientReviewForm">
+                        <input type="text" placeholder="Seu nome" required>
+                        <div class="rating">
+                            <span>Avaliação:</span>
+                            <div class="stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </div>
+                        </div>
+                        <textarea placeholder="Conte-nos sobre sua experiência..." required></textarea>
+                        <button type="submit">Enviar Avaliação</button>
+                    </form>
+                </div>
+                <div class="reviews-list" id="clientReviewsList">
+                    <!-- Reviews will be populated here -->
+                </div>
+            </div>
+
+            <div class="tab-content" id="employee-reviews">
+                <div class="review-form">
+                    <h3>Avalie um funcionário</h3>
+                    <form id="employeeReviewForm">
+                        <input type="text" placeholder="Nome do funcionário" required>
+                        <input type="text" placeholder="Seu nome" required>
+                        <div class="rating">
+                            <span>Avaliação:</span>
+                            <div class="stars">
+                                <i class="fas fa-star" data-rating="1"></i>
+                                <i class="fas fa-star" data-rating="2"></i>
+                                <i class="fas fa-star" data-rating="3"></i>
+                                <i class="fas fa-star" data-rating="4"></i>
+                                <i class="fas fa-star" data-rating="5"></i>
+                            </div>
+                        </div>
+                        <textarea placeholder="Comente sobre o atendimento..." required></textarea>
+                        <button type="submit">Enviar Avaliação</button>
+                    </form>
+                </div>
+                <div class="reviews-list" id="employeeReviewsList">
+                    <!-- Reviews will be populated here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span>TourPlus</span>
+                    </div>
+                    <p>Conectando pessoas a experiências inesquecíveis</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@tourplus.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua das Viagens, 123</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TourPlus. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-modal-content">
+            <span class="close close-contact">&times;</span>
+            <h2>🚗 Comece sua Viagem!</h2>
+            <p>Entre em contato conosco e descubra como podemos tornar sua viagem inesquecível!</p>
+
+            <div class="contact-options">
+                <div class="contact-option" onclick="callPhone()">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Ligar Agora</strong>
+                        <p>(11) 9999-9999</p>
+                    </div>
+                </div>
+
+                <div class="contact-option" onclick="sendWhatsApp()">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <p>Conversar pelo WhatsApp</p>
+                    </div>
+                </div>
+
+                <div class="contact-option" onclick="sendEmail()">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>E-mail</strong>
+                        <p>contato@tourplus.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <p style="font-size: 0.9rem; color: #bdc3c7;">
+                Estamos prontos para atendê-lo das 7h às 22h, todos os dias!
+            </p>
+        </div>
+    </div>
+
+    <!-- Service Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Removido: script do Google Maps -->
+</body>
+
+</html>
